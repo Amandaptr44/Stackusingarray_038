@@ -28,5 +28,18 @@ public:
 		return element;
 	}
 
+	void pop() {
+		if (empty()) {
+			cout << "\nStack is empty. Cannot pop." << endl;
+			top--;
+		}
+		
+		cout << "\nThe poped element is: " << stack_array[top] << endl;
+		top--;
+	}
+
+	bool empty() {
+		return (top == -1);
+	}
 	
 };
